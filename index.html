@@ -4,45 +4,159 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <link href="./css/project.css" type="text/css" rel="stylesheet">
     <title>BrantchYoga</title>
   </head>
-  <body>
+  <body class='text-dark'>
     <div class="navbar-fixed">
       <nav class="greyish">
         <a href="#banner"><img id="nav-mobile" class="left hide-on-small-and-down img-size" src="http://whixley.org/wp-content/uploads/2017/02/yoga-icon.png"></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <div id="nav-mobile" class="right hide-on-small-and-down">
-          <a class="navlinks" href="#projects">Projects</a>
+        <div id="nav-mobile" class="right hide-on-small-and-down text-dark">
+          <a class="navlinks text-dark" href="#projects">Projects</a>
           <a class="navlinks" href="https://drive.google.com/open?id=19RGD1qn-E_jEJYuZ5MCR2kVLbUV-CG7AC4PoFifKg7k">Resume</a>
-          <a class="navlinks" href="/Users/brantchporter/code/wdi/portfolio-brantchyoga/about.html">About</a>
+          <a class="navlinks" href="#showAbout">About</a>
         </div>
         <a href="#banner"><img class="right img-size hide-on-med-and-up" id="mobile-demo" src="http://whixley.org/wp-content/uploads/2017/02/yoga-icon.png"></a>
-        <div class="side-nav">
+        <div class="side-nav text-dark">
           <a href="#projects">Projects</a>
           <a href="https://drive.google.com/open?id=19RGD1qn-E_jEJYuZ5MCR2kVLbUV-CG7AC4PoFifKg7k">Resume</a>
-          <a href="//Users/brantchporter/code/wdi/portfolio-brantchyoga/about.html">About</a>
+          <a href="#showAbout">About</a>
         </div>
       </nav>
     </div>
-    <main class="banner valign-wrapper" id="banner">
-      <div class="banner-text blackseethrough valign-wrapper center">
-        <h1 class="banner-title">Hi I'm Brant</h1>
-        <p>Being a full stack developer with a science background, I love thinking about and feeling the shapes of problems. Finding intuitive and clean solutions that read easily is one of my passions. I carry this over as a yoga teacher where I communicate with my students with clear, succinct instructions.</p>
-      </div>
-    </main>
-    <div class="carousel grey carousel-size" id="projects">
-      <a class="carousel-item" href="#one!"><div class="blue"><h1 class="white-text text-center">Project 1</h1></div></a>
-      <a class="carousel-item" href="#two!"><div class="blue"><h1 class="white-text text-center">Project 2</h1></div></a>
-      <a class="carousel-item" href="#three!"><div class="blue"><h1 class="white-text text-center">Project 3</h1></div></a>
-      <a class="carousel-item" href="#four!"><div class="blue"><h1 class="white-text text-center">Project 4</h1></div></a>
-    </div>
-    <footer class="blue darken-2">
-      <div class="footer-copyright">
-        <div class="container">
-          © 2014 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    <main class="banner" id="banner">
+      <div class="bannerbox">
+        <div class="banner-text blackseethrough text-grey">
+          <h1 class="banner-title">Hi I'm Brant</h1>
+          <p class='banner-content'>Being a full stack developer with a science
+            background, I love thinking about and feeling the shapes of problems.
+            Finding intuitive and clean solutions that read easily is one of my
+            passions. I carry this over as a yoga teacher where I communicate with
+             my students with clear, succinct instructions.</p>
         </div>
+      </div>
+
+      <div class="row">
+      </div>
+
+    </main>
+
+    <div id="projects">
+        <div class='cara-item'>
+          <div class="project-img greyish">
+            <img class='gif-image' src='./images/morty.gif'>
+          </div>
+
+          <div class='project-desc blues text-grey'>
+            <h5>Save the Mortys</h5>
+            <p>Save the Morty's is Quiz/Canvas game. Two players will sign up to
+               play a quiz game similiar to jepardy. The winner will then get to
+               play the Canvas game to save the Morty's. Save the Morty's uses Html,
+               Css, JS, Jquery, and Canvas.</p>
+            <div>
+              <img src='./images/html.png'>
+              <img src='./images/css.png'>
+              <img src='./images/js.png'>
+              <img src='./images/jquery.png'>
+            </div>
+          </div>
+        </div>
+
+        <div class='cara-item'>
+          <div class="project-img greyish">
+            <img class='gif-image' src='./images/pet-search.gif'>
+          </div>
+
+          <div class='project-desc blues text-grey'>
+            <h5>Pet Search</h5>
+            <p>Pet Search is a web app where users can sign up and then search for
+               adoptable pets in there area; where they can save the pet's info.
+               The site has full CRUD routes in respect to the user and pets models.
+               The site uses Node, Express, Postgres, JS, Jquery, Petfinder api and Materialize.
+             </p>
+            <div>
+              <img src='./images/html.png'>
+              <img src='./images/css.png'>
+              <img src='./images/js.png'>
+              <img src='./images/jquery.png'>
+            </div>
+          </div>
+        </div>
+
+        <div class='cara-item'>
+          <div class="project-img greyish">
+            <img class='gif-image' src='./images/ryde.gif'>
+          </div>
+
+          <div class='project-desc blues text-grey'>
+            <h5>Are you the Smartest Rick?</h5>
+            <p>Tired of battling traffic or riding the bus? Ryde brings carpooling
+               into the 21st century, making it easy to get to work, weekend destinations,
+               and more. And if you know that you'll be driving, why not pick up some
+               fellow travellers on the way to share the costs?
+            </p>
+            <p>Ryde is a group project built in collaboration with Sean Cesmat,
+               Scott Rosehart, and Brant Porter.
+            </p>
+            <div>
+              <img src='./images/html.png'>
+              <img src='./images/css.png'>
+              <img src='./images/js.png'>
+              <img src='./images/jquery.png'>
+            </div>
+          </div>
+        </div>
+
+        <div class='cara-item'>
+          <div class="project-img greyish">
+            <img class='gif-image' src='http://www.eyefarm.eu/img/projects/dreams.png'>
+          </div>
+
+          <div class="project-desc blues text-grey">
+            <h5>DoshTracker</h5>
+            <p>An web app for tracking income. When individuals are in an industry
+               where they are paid in cash ('dosh') like bartenders, it can be hard to know how
+               much to need to save. This app helps to tracker your money and figure
+               out how much you should save. I used Pyhton and Django on the backend
+               and React for the frontend.
+            </p>
+            <div>
+              <img src='./images/html.png'>
+              <img src='./images/css.png'>
+              <img src='./images/js.png'>
+              <img src='./images/jquery.png'>
+            </div>
+          </div>
+        </div>
+    </div>
+    <a href='#footer' id='showAbout' class="center text-grey darkenblue hoverabled"><h3>About the developer</h3></a>
+    <div id='about' class="about text-center">
+      <div>
+        <h5>Coding</h5>
+        <p>
+          Welcome to my website! I am a dedicated developer with a passion for
+          learning new technologies. Coding drew me in because of it's ever changing
+          environment. I love looking at data and finding ways to shape it with code (I'm a synesthete).
+          I tend to focus more on designing and implementing functions and models but
+          can also style with goal in mind.
+        </p>
+        <h5>Outside</h5>
+        <p>
+
+        </p>
+      </div>
+    </div>
+
+    <footer id='footer' class="darkenblue text-grey">
+      <div class="left">
+        <p>Created by: BrantchYoga (Brant Boyes)</p>
+      </div>
+      <div class="right">
+        <a class='hoverable' href='https://github.com/brantchyoga'><img src='./images/github.png'></a>
+        <a class='hoverable footer-links' href='https://www.linkedin.com/in/brant-porter/'><img src='./images/linkedin.png'></a>
       </div>
     </footer>
 
