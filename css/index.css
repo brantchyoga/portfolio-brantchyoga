@@ -6,6 +6,7 @@ a:hover {
   text-decoration:none;
   cursor:pointer;
 }
+
 body {
   font-family: 'Arvo', serif;
 }
@@ -89,4 +90,11 @@ body {
    text-shadow: 0 .2em .3em rgba(208, 208, 215,.5);
    /* width: 50%; */
    box-shadow: 0 .5em 2em rgba(208, 208, 215,.5);
+ }
+ .img-icon {
+   width: 45px;
+   height: 45px;
+   border-radius: 50% 50% 50% 50%;
+   background-color: yellow;
+   border: 2px solid black;
  }
