@@ -2,11 +2,17 @@
 a {
   text-decoration: none;
 }
+.icon {
+  width: 50px !important;
+  display: inline-block;
+}
 a:hover {
   text-decoration:none;
   cursor:pointer;
 }
-
+h6 {
+  font-size: 20px;
+}
 body {
   font-family: 'Arvo', serif;
 }
@@ -32,7 +38,6 @@ body {
 .darkenblue {
   background-color: #0A1F29;
 }
-
 .navlinks {
   margin: 0 8px;
 }
@@ -97,4 +102,10 @@ body {
    border-radius: 50% 50% 50% 50%;
    background-color: yellow;
    border: 2px solid black;
+ }
+ .project-desc > div > a {
+   color: #2de4e4 !important;
+ }
+ .icon-image {
+  width: 100%;
  }
